@@ -1,0 +1,19 @@
+# Dependencies and Build Artifacts
+node_modules/
+backend/target/
+frontend/dist/
+
+# Git
+.git/
+.gitignore
+
+# IDE / OS Files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Docker
+Dockerfile
+.dockerignore

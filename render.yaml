@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: cafena-backend
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /api/auth/users
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: CORS_ALLOWED_ORIGINS
+        value: "*" # Set this to your Vercel URL in Render Dashboard later
